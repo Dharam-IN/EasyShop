@@ -10,21 +10,21 @@
 </head>
 <body>
      <!-- Navbar -->
-     <nav class="bg-[#1A4D2E] px-3 py-3 flex justify-between relative">
+    <nav class="bg-[#1A4D2E] px-3 py-3 flex justify-between relative">
         <div class="flex items-center gap-4">
             <button id="menuButton" class="text-3xl text-white cursor-pointer lg:hidden">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="text-white">
-                <a href="/">
-                    <h3>Logo</h3>
+                <a href="index.html">
+                    <img class="w-[70px]" src="./Images/Light-Logo-ico.png" alt="img">
                 </a>
             </div>
         </div>
         <div class="hidden lg:block relative">
             <ul class="flex gap-[2rem] text-white">
                 <li class="text-lg relative py-4">
-                    <a href="/">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="text-lg relative py-4">
                     <a href="./about.html">About</a>
@@ -40,40 +40,141 @@
                 </li>
             </ul>
         </div>
-        <div class="flex items-center">
-            <div>
-                <button>
+        <div class="flex items-center" id="NavbarSearchDivID">
+            <div class="relative">
+                <input type="text" class="px-5 py-3" placeholder="Search....">
+                <button class="text-white absolute top-[50%] right-5 translate-y-[-50%]" id="NavbarSearchBtn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
     </nav>
     <div id="sidebar" class="fixed lg:hidden top-0 w-full h-full z-40 bg-[#0000004b] transition-all duration-300 invisible">
-        
-        <div class="relative w-[250px] h-full px-[1rem] py-[6rem] bg-white transition-transform duration-300 transform translate-x-0">
-            <button id="closeButton" class="absolute top-[1rem] z-[99] left-[1rem] text-2xl cursor-pointer bg-[#003366] text-white p-[3px]">
+        <div class="relative w-[250px] h-full px-[1rem] py-[6rem] bg-white transition-transform duration-300 transform -translate-x-full SidebarMenu">
+            <button id="closeMenuButton" class="absolute top-[1rem] z-[99] left-[1rem] text-2xl cursor-pointer bg-[#1A4D2E] text-white px-3 py-2">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
                 <li>
-                    <a href="/" class="block text-white bg-[#003366] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Home</a>
+                    <a href="index.html" class="block text-white bg-[#1A4D2E] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Home</a>
                 </li>
                 <li>
-                    <a href="./about.html" class="block text-white bg-[#003366] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">About</a>
+                    <a href="./about.html" class="block text-white bg-[#1A4D2E] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">About</a>
                 </li>
                 <li>
-                    <a href="#" class="block text-white bg-[#003366] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Laptops</a>
+                    <a href="#" class="block text-white bg-[#1A4D2E] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Laptops</a>
                 </li>
                 <li>
-                    <a href="#" class="block text-white bg-[#003366] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Smart Phones</a>
+                    <a href="#" class="block text-white bg-[#1A4D2E] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Smart Phones</a>
                 </li>
                 <li>
-                    <a href="./contact.html" class="block text-white bg-[#003366] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Contact</a>
+                    <a href="./contact.html" class="block text-white bg-[#1A4D2E] mb-3 py-2 px-4 w-full rounded-md font-medium hover:bg-[#40679E]">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <h1>About</h1>
+    <!-- About Section -->
+    <div class="py-16 bg-white">
+        <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                <!-- Your Side -->
+                <div class="md:w-5/12 lg:w-5/12">
+                    <img src="./Images/AboutIMG.png" alt="image">
+                </div>
+                <!-- Your Side -->
+                <div class="md:w-7/12 lg:w-6/12">
+                    <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">
+                        About Me
+                    </h2>
+                    <p class="mt-6 text-gray-600">
+                        My name is Dharam, and I'm a full-stack developer specializing in the MERN stack. I have several years of experience working with React, Node.js, Express.js, and MongoDB. I'm passionate about creating efficient, scalable, and user-friendly web applications.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        Currently, I'm focused on honing my skills in Data Structures and Algorithms, Database Management Systems, and Operating Systems to further enhance my expertise in software development.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        Feel free to connect with me on:
+                        <a href="https://github.com/Dharam-IN" class="text-blue-500 hover:underline">GitHub</a>,
+                        <a href="https://www.linkedin.com/in/dharam-in/" class="text-blue-500 hover:underline">LinkedIn</a>, and
+                        <a href="https://twitter.com/Dharam__IN" class="text-blue-500 hover:underline">Twitter</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0 w-[20%]">
+                <a href="index.html" class="flex items-center">
+                    <img src="./Images/Light-Logo-ico.png" class="h-8 me-3" alt="EasyShop Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Easy Shop</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-[100%] sm:w-[60%]">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="https://fontawesome.com/" class="hover:underline">Font Awesome</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="https://github.com/Dharam-IN" class="hover:underline ">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/y5q3ReKn" class="hover:underline">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024-30 <a href="https://github.com/Dharam-IN" class="hover:underline">Dharam-in</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 gap-4 sm:justify-center sm:mt-0">
+                <a href="https://github.com/Dharam-IN" class="text-gray-500 text-xl hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="sr-only">Github Account</span>
+                </a>
+                <a href="https://www.linkedin.com/in/dharam-in/" class="text-gray-500 text-xl hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="sr-only">Linkedin Account</span>
+                </a>
+                <a href="https://twitter.com/Dharam__IN" class="text-gray-500 text-xl hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <span class="sr-only">Twitter Account</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./JS/script.js"></script>
 </body>
 </html>
