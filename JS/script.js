@@ -2,7 +2,7 @@
 var SearchBTN = document.getElementById("NavbarSearchBtn");
 
 SearchBTN.addEventListener("click", ()=>{
-    document.getElementById("NavbarSearchDivID").classList.toggle("NavSearchDiv")
+    document.getElementById("NavbarSearchDivID").classList.add("NavSearchDiv")
 });
 
 
@@ -17,7 +17,7 @@ document.getElementById("closeMenuButton").addEventListener("click", ()=> {
 
 
 // DATA
-const productsArray = [
+let productsArray = [
     {
       "id": 1,
       "title": "iPhone 9",
@@ -26,7 +26,7 @@ const productsArray = [
       "discountPercentage": 12.96,
       "rating": 4.69,
       "stock": 94,
-      "brand": "Apple",
+      "brand": "brand",
       "category": "smartphones",
       "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
       "images": [
@@ -565,5 +565,44 @@ const productsArray = [
       ]
     }
 ]
-console.log(productsArray)
 
+function GenerateHTML(product){
+  return `<div class="border border-gray-400 group">
+              <div class="bg-red-500 h-[300px] overflow-hidden">
+                  <img src="${product.thumbnail}" class="w-full h-full object-cover group-hover:scale-110 transition duration-300" alt="img">
+              </div>
+              <div class="p-4">
+                  <h3 class="text-2xl font-bold">${product.title}</h3>
+                  <p class="text-[17px]">${product.description}</p>
+                  <ul class="flex justify-between w-full flex-wrap gap-y-2">
+                      <li class="w-[50%]">
+                          <b>Price: </b>
+                          <span>${product.price} $</span>
+                      </li>
+                      <li class="w-[50%]">
+                          <b>Discount:</b>
+                          <span>${product.discountPercentage} %</span>
+                      </li>
+                      <li class="w-[50%]">
+                          <b>Rating:</b>
+                          <span>${product.rating}</span>
+                      </li>
+                      <li class="w-[50%]">
+                          <b>Brand:</b>
+                          <span>${product.brand}</span>
+                      </li>
+                      <li class="w-[50%]">
+                          <b>Category:</b>
+                          <span>${product.category}</span>
+                      </li>
+                  </ul>
+              </div>
+          </div>`
+}
+
+function RenderProducts(products){
+  const ProductsHTML = products.map((product) => GenerateHTML(product)).join('')
+  document.getElementById("ProductsRow").innerHTML = ProductsHTML;
+}
+
+RenderProducts(productsArray)
