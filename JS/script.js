@@ -623,8 +623,35 @@ function SearchProduct(){
 
   })
 
-
 }
 
-RenderProducts(productsArray)
-SearchProduct()
+function LoadFunctions(){
+  RenderProducts(productsArray)
+  SearchProduct()
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  LoadFunctions()
+})
+
+// Selected Category
+function FindCategory(){
+  let category = document.getElementById("ProductCategory");
+  category.addEventListener("change", function(){
+    let selectedCategory = this.value.toLowerCase();
+    console.log(selectedCategory)
+    if(selectedCategory == "all"){
+      RenderProducts(productsArray)
+    }else{
+      let selectedCategoryProducts = productsArray.filter(product => product.category.toLowerCase().includes(selectedCategory))
+      if(selectedCategoryProducts.length > 1){
+        RenderProducts(selectedCategoryProducts)
+      }else{
+        document.getElementById("ProductsRow").innerHTML = "<p>Currently this catrgory Empty</p>";
+      }
+    }
+    
+  })
+}
+
+FindCategory()
