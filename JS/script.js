@@ -28,7 +28,8 @@ let productsArray = [
       "stock": 94,
       "brand": "brand",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      // "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "thumbnail": "./Images/iPhone9.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/1/1.jpg",
         "https://cdn.dummyjson.com/product-images/1/2.jpg",
@@ -47,7 +48,7 @@ let productsArray = [
       "stock": 34,
       "brand": "Apple",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "thumbnail": "./Images/iPhoneX.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/2/1.jpg",
         "https://cdn.dummyjson.com/product-images/2/2.jpg",
@@ -65,7 +66,7 @@ let productsArray = [
       "stock": 36,
       "brand": "Samsung",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "thumbnail": "./Images/SamsungUniverse9.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/3/1.jpg"
       ]
@@ -80,7 +81,7 @@ let productsArray = [
       "stock": 123,
       "brand": "OPPO",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "thumbnail": "./Images/OPPOF19.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/4/1.jpg",
         "https://cdn.dummyjson.com/product-images/4/2.jpg",
@@ -99,7 +100,7 @@ let productsArray = [
       "stock": 32,
       "brand": "Huawei",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+      "thumbnail": "./Images/HuaweiP30.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/5/1.jpg",
         "https://cdn.dummyjson.com/product-images/5/2.jpg",
@@ -116,7 +117,7 @@ let productsArray = [
       "stock": 83,
       "brand": "Apple",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+      "thumbnail": "./Images/MacBookPro.png",
       "images": [
         "https://cdn.dummyjson.com/product-images/6/1.png",
         "https://cdn.dummyjson.com/product-images/6/2.jpg",
@@ -134,7 +135,7 @@ let productsArray = [
       "stock": 50,
       "brand": "Samsung",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+      "thumbnail": "./Images/SamsungGalaxyBook.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/7/1.jpg",
         "https://cdn.dummyjson.com/product-images/7/2.jpg",
@@ -152,7 +153,7 @@ let productsArray = [
       "stock": 68,
       "brand": "Microsoft Surface",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+      "thumbnail": "./Images/MicrosoftSurfaceLaptop4.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/8/1.jpg",
         "https://cdn.dummyjson.com/product-images/8/2.jpg",
@@ -171,7 +172,7 @@ let productsArray = [
       "stock": 120,
       "brand": "Infinix",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+      "thumbnail": "./Images/InfinixINBookX1.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/9/1.jpg",
         "https://cdn.dummyjson.com/product-images/9/2.jpg",
@@ -190,7 +191,7 @@ let productsArray = [
       "stock": 30,
       "brand": "Dell",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpg",
+      "thumbnail": "./Images/DellXPS.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/10/1.jpg",
         "https://cdn.dummyjson.com/product-images/10/2.jpg",
@@ -209,7 +210,7 @@ let productsArray = [
       "stock": 60,
       "brand": "Google",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
+      "thumbnail": "./Images/GooglePixel6.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/11/1.jpg",
         "https://cdn.dummyjson.com/product-images/11/2.jpg",
@@ -227,7 +228,7 @@ let productsArray = [
       "stock": 42,
       "brand": "OnePlus",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg",
+      "thumbnail": "./Images/OnePlus9Pro.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/12/1.jpg",
         "https://cdn.dummyjson.com/product-images/12/2.jpg",
@@ -246,7 +247,7 @@ let productsArray = [
       "stock": 26,
       "brand": "Lenovo",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/13/thumbnail.jpg",
+      "thumbnail": "./Images/LenovoThinkPad.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/13/1.jpg",
         "https://cdn.dummyjson.com/product-images/13/2.jpg",
@@ -264,7 +265,7 @@ let productsArray = [
       "stock": 90,
       "brand": "Xiaomi",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/14/thumbnail.jpg",
+      "thumbnail": "./Images/XiaomiRedmiNote11.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/14/1.jpg",
         "https://cdn.dummyjson.com/product-images/14/2.jpg",
@@ -283,7 +284,7 @@ let productsArray = [
       "stock": 20,
       "brand": "ASUS",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/15/thumbnail.jpg",
+      "thumbnail": "./Images/ASUSROGZephyrusG15.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/15/1.jpg",
         "https://cdn.dummyjson.com/product-images/15/2.jpg",
@@ -301,7 +302,7 @@ let productsArray = [
       "stock": 55,
       "brand": "Realme",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/16/thumbnail.jpg",
+      "thumbnail": "./Images/RealmeGT2Pro.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/16/1.jpg",
         "https://cdn.dummyjson.com/product-images/16/2.jpg",
@@ -320,7 +321,7 @@ let productsArray = [
       "stock": 28,
       "brand": "Sony",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg",
+      "thumbnail": "./Images/SonyXperia1IV.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/17/1.jpg",
         "https://cdn.dummyjson.com/product-images/17/2.jpg",
@@ -338,7 +339,7 @@ let productsArray = [
       "stock": 17,
       "brand": "HP",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/18/thumbnail.jpg",
+      "thumbnail": "./Images/HPSpectrex360.jpeg",
       "images": [
         "https://cdn.dummyjson.com/product-images/18/1.jpg",
         "https://cdn.dummyjson.com/product-images/18/2.jpg",
@@ -356,7 +357,7 @@ let productsArray = [
       "stock": 40,
       "brand": "Nokia",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/19/thumbnail.jpg",
+      "thumbnail": "./Images/NokiaX50.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/19/1.jpg",
         "https://cdn.dummyjson.com/product-images/19/2.jpg",
@@ -374,7 +375,7 @@ let productsArray = [
       "stock": 50,
       "brand": "Motorola",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/20/thumbnail.jpg",
+      "thumbnail": "./Images/MotorolaMotoG200.jpeg",
       "images": [
         "https://cdn.dummyjson.com/product-images/20/1.jpg",
         "https://cdn.dummyjson.com/product-images/20/2.jpg",
@@ -392,7 +393,7 @@ let productsArray = [
       "stock": 15,
       "brand": "Acer",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/21/thumbnail.jpg",
+      "thumbnail": "./Images/AcerPredatorHelios500.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/21/1.jpg",
         "https://cdn.dummyjson.com/product-images/21/2.jpg",
@@ -411,7 +412,7 @@ let productsArray = [
       "stock": 70,
       "brand": "TCL",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/22/thumbnail.jpg",
+      "thumbnail": "./Images/TCL305G.webp",
       "images": [
         "https://cdn.dummyjson.com/product-images/22/1.jpg",
         "https://cdn.dummyjson.com/product-images/22/2.jpg",
@@ -429,7 +430,7 @@ let productsArray = [
       "stock": 38,
       "brand": "Vivo",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/23/thumbnail.jpg",
+      "thumbnail": "./Images/VivoX90Pro.jpeg",
       "images": [
         "https://cdn.dummyjson.com/product-images/23/1.jpg",
         "https://cdn.dummyjson.com/product-images/23/2.jpg",
@@ -447,7 +448,7 @@ let productsArray = [
       "stock": 25,
       "brand": "LG",
       "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/24/thumbnail.jpg",
+      "thumbnail": "./Images/LGGram.jpeg",
       "images": [
         "https://cdn.dummyjson.com/product-images/24/1.jpg",
         "https://cdn.dummyjson.com/product-images/24/2.jpg",
@@ -465,7 +466,7 @@ let productsArray = [
       "stock": 45,
       "brand": "ZTE",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/25/thumbnail.jpg",
+      "thumbnail": "./Images/ZTEAxon40Pro.webp",
       "images": [
         "https://cdn.dummyjson.com/product-images/25/1.jpg",
         "https://cdn.dummyjson.com/product-images/25/2.jpg",
@@ -483,7 +484,7 @@ let productsArray = [
       "stock": 30,
       "brand": "BlackBerry",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/26/thumbnail.jpg",
+      "thumbnail": "./Images/BlackBerryPassport.webp",
       "images": [
         "https://cdn.dummyjson.com/product-images/26/1.jpg",
         "https://cdn.dummyjson.com/product-images/26/2.jpg",
@@ -501,7 +502,7 @@ let productsArray = [
       "stock": 32,
       "brand": "Nubia",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/27/thumbnail.jpg",
+      "thumbnail": "./Images/NubiaRedMagic7.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/27/1.jpg",
         "https://cdn.dummyjson.com/product-images/27/2.jpg",
@@ -520,7 +521,7 @@ let productsArray = [
       "stock": 38,
       "brand": "Meizu",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/28/thumbnail.jpg",
+      "thumbnail": "./Images/Meizu19.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/28/1.jpg",
         "https://cdn.dummyjson.com/product-images/28/2.jpg",
@@ -538,7 +539,7 @@ let productsArray = [
       "stock": 27,
       "brand": "Oppo",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/29/thumbnail.jpg",
+      "thumbnail": "./Images/OppoFindX5.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/29/1.jpg",
         "https://cdn.dummyjson.com/product-images/29/2.jpg",
@@ -556,7 +557,7 @@ let productsArray = [
       "stock": 23,
       "brand": "Black Shark",
       "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
+      "thumbnail": "./Images/BlackShark5Pro.jpg",
       "images": [
         "https://cdn.dummyjson.com/product-images/30/1.jpg",
         "https://cdn.dummyjson.com/product-images/30/2.jpg",
@@ -600,9 +601,30 @@ function GenerateHTML(product){
           </div>`
 }
 
+// Render Products
 function RenderProducts(products){
   const ProductsHTML = products.map((product) => GenerateHTML(product)).join('')
   document.getElementById("ProductsRow").innerHTML = ProductsHTML;
 }
 
+// Search Products
+function SearchProduct(){
+  let inputEle = document.getElementById("SearchValue");
+
+  inputEle.addEventListener("input", function(){
+    let inputvalue = document.getElementById("SearchValue").value.toLowerCase().trim();
+    let FilterdProducts = productsArray.filter(product => product.title.toLowerCase().includes(inputvalue));
+
+    if(FilterdProducts.length > 0){
+      RenderProducts(FilterdProducts);
+    }else{
+      document.getElementById("ProductsRow").innerHTML = "<p>No matching products found.</p>";
+    }
+
+  })
+
+
+}
+
 RenderProducts(productsArray)
+SearchProduct()
