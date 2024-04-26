@@ -654,4 +654,26 @@ function FindCategory(){
   })
 }
 
+
+// Selected Category Sidebar
+function FindCategorySidebar(){
+  let category = document.getElementById("ProductCategorySidebar");
+  category.addEventListener("change", function(){
+    let selectedCategory = this.value.toLowerCase();
+    console.log(selectedCategory)
+    if(selectedCategory == "all"){
+      RenderProducts(productsArray)
+    }else{
+      let selectedCategoryProducts = productsArray.filter(product => product.category.toLowerCase().includes(selectedCategory))
+      if(selectedCategoryProducts.length > 1){
+        RenderProducts(selectedCategoryProducts)
+      }else{
+        document.getElementById("ProductsRow").innerHTML = "<p>Currently this catrgory Empty</p>";
+      }
+    }
+    
+  })
+}
+
 FindCategory()
+FindCategorySidebar()
