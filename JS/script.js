@@ -567,13 +567,19 @@ let productsArray = [
     }
 ]
 
-function GenerateHTML(product){
+function GenerateHTML(product, Searchvalue){
+  
+  console.log(Searchvalue)
+  const title = product.title.toLowerCase();
+
+  let highlightTitle = title.replace(new RegExp(Searchvalue, 'gi'), match => `<span class="highlight">${match}</span>`)
+  
   return `<div class="border border-gray-400 group">
               <div class="bg-red-500 h-[300px] overflow-hidden">
                   <img src="${product.thumbnail}" class="w-full h-full object-cover group-hover:scale-110 transition duration-300" alt="img">
               </div>
               <div class="p-4">
-                  <h3 class="text-2xl font-bold">${product.title}</h3>
+                  <h3 class="text-2xl font-bold">${highlightTitle}</h3>
                   <p class="text-[17px]">${product.description}</p>
                   <ul class="flex justify-between w-full flex-wrap gap-y-2">
                       <li class="w-[50%]">
@@ -602,8 +608,8 @@ function GenerateHTML(product){
 }
 
 // Render Products
-function RenderProducts(products){
-  const ProductsHTML = products.map((product) => GenerateHTML(product)).join('')
+function RenderProducts(products, searchValue){
+  const ProductsHTML = products.map((product) => GenerateHTML(product, searchValue)).join('');
   document.getElementById("ProductsRow").innerHTML = ProductsHTML;
 }
 
@@ -614,9 +620,9 @@ function SearchProduct(){
   inputEle.addEventListener("input", function(){
     let inputvalue = document.getElementById("SearchValue").value.toLowerCase().trim();
     let FilterdProducts = productsArray.filter(product => product.title.toLowerCase().includes(inputvalue));
-
+    let highlight = inputvalue;
     if(FilterdProducts.length > 0){
-      RenderProducts(FilterdProducts);
+      RenderProducts(FilterdProducts, inputvalue);
     }else{
       document.getElementById("ProductsRow").innerHTML = "<p>No matching products found.</p>";
     }

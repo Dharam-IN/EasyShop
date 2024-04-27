@@ -24,3 +24,6 @@
 .MenuSidebar .SidebarMenu{
     transform: translateX(0) !important;
 }
+.highlight{
+    background-color: yellow;
+}
